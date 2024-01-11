@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tony Tan</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <!-- The Nav Bar -->
+    <div id="nav-bar-body">
+
+        <div id="nav-bar-button-container">
+
+            <button class="nav-buttons" onclick="scrollToSection('about-section')">About</button>
+            <button class="nav-buttons" onclick="scrollToSection('experiences-section')">Experience</button>
+            <button class="nav-buttons" onclick="scrollToSection('projects-section')">Projects</button>
+            <button class="nav-buttons" onclick="scrollToSection('contact-section')">Contact</button>
+
+            <!-- Hamburger Menu- When Screen Too Small -->
+            <input type="checkbox" id="menu-toggle">
+            <button id = "drop-down-button" >
+                <div class="drop-down-line" class="drop-down-button-line"></div>
+                <div class="drop-down-line" class="drop-down-button-line"></div>
+                <div class="drop-down-line" class="drop-down-button-line"></div>
+            </button>
+
+            <button id="drop-down-button-close">
+                <div class="drop-down-line" style="transform: rotate(-45deg) translateX(-6.5px) translateY(6.5px);"></div>
+                <div class="drop-down-line" style="transform: rotate(45deg) translateX(-6.5px) translateY(-6.5px);"></div>
+            </button>
+
+            <button class="nav-buttons-hamburger" onclick="scrollToSection('about-section')" style="position: fixed; margin-top: 60px; z-index: 5;">About</button>
+            <button class="nav-buttons-hamburger" onclick="scrollToSection('experiences-section')" style="position: fixed; margin-top: 120px; z-index: 4;">Experience</button>
+            <button class="nav-buttons-hamburger" onclick="scrollToSection('projects-section')" style="position: fixed; margin-top: 180px; z-index: 3;">Projects</button>
+            <button class="nav-buttons-hamburger" onclick="scrollToSection('contact-section')" style="position: fixed; margin-top: 240px; z-index: 2; border-bottom: 2px #4a5568 solid;">Contact</button>
+            
+        </div>
+
+    </div>
+
+        <div class="introduction">
+
+            <div class="intro-picture">
+                <img class="selfie" src="../static/selfie.jpg">
+            </div>
+
+            <div class="intro-description">
+                <h2 class="actual-intro-description-name">Tony Tan</h2>
+                <h3 class="actual-intro-description-title">Software Engineer</h3>
+                <h4 class="actual-intro-description-title">American River College</h4>
+                <div>
+                    <button class="network-buttons"><img src="/static/icons8-linkedin-96.png">LinkedIn</button>
+                    <button class="network-buttons"><img src="/static/icons8-github-96.png">Github</button>
+                    <button class="network-buttons" ><img src="/static/icons8-instagram-96.png">Instagram</button>
+                    <button class="network-buttons"><img src="/static/icons8-indeed-96.png">Indeed</button>
+                    <button class="network-buttons"><img src="/static/icons8-resume-100.png">Resume</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Me -->
+        <div class="about-container">
+            <div class="about-container-title">
+                <h1 id="about-section" style="margin-bottom: 0;">About Me</h1>
+                <img class="section-pic" src="/static/icons8-about-me-100.png">
+            </div>
+
+            <div class="about-container-description">
+                <p>Hi, my name is Tony Tan. I am an aspiring Software Engineer with an interest in full-stack development, software development, and game development. I always strive to do my very best in learning the newest of technologies to make sure I stay relevant in the hastingly fast development in technologies (Ex: frameworks and languages). The reason I fell in love with programming is because I am able to critically-think, problem-solve, and engage with techonlogies. I hope that my skills and interests will be of use in the market to help make an impact for a better future for everyone. </p>
+            </div>
+        </div>
+        
+        <div>
+            <h1 class="container-title" id="experiences-section">Experiences/Skills
+                <img style="display: flex; align-content: center;" class="section-pic" src="../static/gear.png">
+            </h1>
+            <div class="experiences-container">
+                <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+                    <button class="network-buttons-experience"><img src="/static/icons8-python-96.png">Python</button>
+                    <button class="network-buttons-experience"><img src="/static/icons8-c++-96.png">C++</button>
+                    <button class="network-buttons-experience"><img src="/static/icons8-html-5-96.png">HTML5</button>
+                    <button class="network-buttons-experience"><img src="/static/icons8-css3-96.png">CSS</button>
+                    <button class="network-buttons-experience"><img src="/static/icons8-github-96.png">Github</button>
+                    <button class="network-buttons-experience"><img src="/static/icons8-git-96.png">Git</button>
+                    <button class="network-buttons-experience"><img src="/static/icons8-flask-96.png">Flask</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="projects">
+            <h1 class="container-title" id="projects-section">Projects
+                <img class="section-pic" src="/static/icons8-project-100.png">
+            </h1>
+            
+            <div class="project-section">
+
+                <div class="project-border">
+                    <div class="project-photo-container">
+                        <img class="project-photo" src="../static/BlazeGuard.png">
+                    </div>
+                    <div class="project-main-container">
+                        <div class="project-title">
+                            NVDI BlazeGuard
+                        </div>
+                        <div class="project-description">
+                            Created the back-end of the Nasa Space Apps hackathon project named NVDI BlazeGuard which was a website that would gather data on flammability of vegetation in the local area. The backend connected to a satillite API to gather data on the flammability index of the local vegetation in the area and would send the data to the front-end of the website to use.
+                        </div>
+                        <div class="project-skills">
+                            <button class="network-buttons"><img src="/static/icons8-python-96.png">Python</button>
+                            <button class="network-buttons"><img src="/static/icons8-git-96.png">Git</button>
+                            <button class="network-buttons"><img src="/static/icons8-github-96.png">Github</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--               -->
+                <div class="project-border">
+                    <div class="project-photo-container">
+                        <img class="project-photo" src="../static/interview-prep.png">
+                    </div>
+                    <div class="project-main-container">
+                        <div class="project-title">
+                            Interview Preparation Website
+                        </div>
+                        <div class="project-description">
+                            I created a mock-interview preparation website prototype for FAANG companies as my SacHack hackathon project through translating the ideas provided by my teammates into code using Python, HTML, CSS, Flask, and uploading the content to cloud platform using Github and version control via Git.
+                        </div>
+                        <div class="project-skills">
+                            <button class="network-buttons-experience"><img src="/static/icons8-html-5-96.png">Python</button>
+                            <button class="network-buttons-experience"><img src="/static/icons8-css3-96.png">CSS</button>
+                            <button class="network-buttons-experience"><img src="/static/icons8-flask-96.png">Flask</button>
+                            <button class="network-buttons-experience"><img src="/static/icons8-git-96.png">Git</button>
+                            <button class="network-buttons-experience"><img src="/static/icons8-github-96.png">Github</button>
+                            <button class="network-buttons-experience"><img src="/static/icons8-python-96.png">Python</button>
+                        </div>
+                    </div>
+                </div>
+                <!--               -->
+
+                <!--               -->
+                <div class="project-border">
+                    <div class="project-photo-container">
+                        <img class="project-photo" src="../static/pong.png">
+                    </div>
+                    <div class="project-main-container">
+                        <div class="project-title">
+                            Pong Game
+                        </div>
+                        <div class="project-description">
+                            Created a simple pong game in Python to solidify basic concepts in game development.
+                        </div>
+                        <div class="project-skills">
+                            <button class="network-buttons"><img src="/static/icons8-python-96.png">LinkedIn</button>
+                        </div>
+                    </div>
+                </div>
+                <!--               -->
+
+            </div>
+        </div>
+
+
+        <div class="contact-section">
+            <h1 class="container-title" id="contact-section">Contact Me
+                <img class="section-pic" src="/static/icons8-contact-100.png">
+            </h1>
+        </div>
+
+
+<div class="contact-container">
+    <form action="https://formspree.io/f/xgegvwnp" method="POST" class="contact-form">
+        <h2>Name</h2>
+        <input style="height: 27px; font-size: 15px;" type="name" name="form-name">
+        <h2>Email</h2>
+          <input style="height: 27px; font-size: 15px;" type="email" name="email">
+        <h2>Message</h2>
+          <textarea name="message" style="max-width: 100%; min-height: 50px; font-size: 15px;"></textarea>
+          <div class="form-button-container">
+            <div class="form-button">
+                <button class="submit-button" type="submit">Send</button>
+              </div>
+          </div>
+      </form>
+</div>
+
+<script>
+    function scrollToSection(sectionId, offset) {
+        const section = document.getElementById(sectionId);
+        const offsetValue = offset || -150; 
+        const offsetPosition = section.offsetTop + offsetValue;
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    }
+</script>
+
+</body>
+</html>
